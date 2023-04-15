@@ -22,19 +22,17 @@ $personas = [
     foreach ($personas as $persona) {
         echo ($persona['edad'] > 18) ? '<font color="blue">' : '<font color="red">'; //operador
         echo 'hola ' . $persona['nombre'] . ', bienvenido a ' . $persona['ciudad'] . ' su edad es ' . $persona['edad'];
-        ;
         echo '</font>';
         echo '<br>';
     }
     ?>
-    <form action="saludar.php" method="get">//action es a donde van a ir los datos
+    <form action="saludar.php" method="post">
         <div>
-            <br>
             <label>Nombre</label>
-            <input type="text" name="nombreIn" required  >
-            <label>Ciudad:</label>
+            <input type="text" name="nombreIn" require>
         </div>
         <div>
+        <label>Ciudad:</label>
             <select name="ciudadIn">
                 <option>bogota</option>
                 <option>Sogamoso</option>
@@ -43,7 +41,7 @@ $personas = [
         </div>
         <div>
             <label>Edad:</label>
-            <input type="number" name="edadIn" min="1" max="130" required>
+            <input type="number" name="edadIn" min="1" max="130" require>
         </div>
         <div>
             <button type="submit">saludar</button>
