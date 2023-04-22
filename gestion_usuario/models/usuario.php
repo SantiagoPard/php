@@ -19,18 +19,18 @@ class Usuario{
         $this->username = $value;
     }
     public function getPassword(){
-        return $this->username;
+        return $this->password;
     }
 
     public function setPassword($value){
-        $this->username = $value;
+        $this->password = $value;
     }
     public function getName(){
-        return $this->username;
+        return $this->name;
     }
 
     public function setName($value){
-        $this->username = $value;
+        $this->name = $value;
     }
 }
 ?>

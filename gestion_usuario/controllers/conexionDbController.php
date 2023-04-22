@@ -1,5 +1,5 @@
 <?php
-    use mysqli;
+    
     class ConexionDbController{
         private $server_db = '127.0.0.1';
         private $user_db='root';
